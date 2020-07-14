@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [yulya sigova](https://up.htmlacademy.ru/adaptive/20/user/230781).
-* Наставник: `Неизвестно`.
+* Наставник: [Иван Жарков](https://htmlacademy.ru/profile/stalyer).
 
 ---
 
