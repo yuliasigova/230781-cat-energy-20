@@ -1,12 +1,133 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
 
-  </body>
+<body class="page__body">
+
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img src="https://via.placeholder.com/150x150" alt="Лого сайта">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span>Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a>главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html">
+              каталог продукции
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">
+              подбор программы
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main">
+    <section class="nutrition">
+      <h1 class="nutrition__title">Функциональное питание для котов</h1>
+      <p class="nutrition__text">Занялся собой? Займись котом!</p>
+      <img src="https://via.placeholder.com/150x150" alt="Картинка баночки корма">
+      <a class="nutrition__button button" href="form.html">подобрать программу</a>
+    </section>
+    <section class="ration">
+      <h2 class="visually-hidden">Выбор рациона</h2>
+      <ul class="ration__list">
+        <li class="ration__item">
+          <article class="ration-card ration-card--loss">
+            <h3 class="ration-card__title">похудение</h3>
+            <p class="ration-card__info">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
+              Пора на диету! Cat Energy
+              Slim поможет вашему питомцу сбросить лишний вес.</p>
+            <a href="#">Каталог Slim</a>
+          </article>
+        </li>
+        <li class="ration__item">
+          <article class="ration-card ration-card--gain">
+            <h3 class="ration-card__title">Набор массы</h3>
+            <p class="ration-card__info">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
+              поможет вашему коту
+              нарастить необходимые мышцы!</p>
+            <a href="#">Каталог Pro</a>
+          </article>
+        </li>
+      </ul>
+    </section>
+    <section class="advantages">
+        <h2 class="advantages__title">Как это работает</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item advantages__item--healhhy">
+            Функциональное питание содержит только полезные питательные вещества.
+          </li>
+          <li class="advantages__item advantages__item--product">
+            Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
+          </li>
+          <li class="advantages__item advantages__item--ration">
+            Замените один-два приема обычной еды на наше функциональное питание.
+          </li>
+          <li class="advantages__item advantages__item--time">
+            Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+          </li>
+        </ul>
+    </section>
+    <section class="example">
+        <h2 class="example__title">Живой пример</h2>
+        <p class="example__info">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+          Отличный результат без
+          изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+        <dl class="example__table">
+          <dt class="example__value">5 кг</dt>
+          <dd class="example__description">снижение веса</dd>
+          <dt class="example__value">60 ДНЕЙ</dt>
+          <dd class="example__description">затрачено времени</dd>
+        </dl>
+        <p class="example__price">Затраты на питание: 15 000 РУБ.</p>
+        <img src="https://via.placeholder.com/150x150" alt="физическая форма кота">
+        <button class="example__button example__button--before" type="button">было</button>
+        <button class="example__button example__button--after" type="button">стало</button>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__contacts contacts">
+        <p class="contacts__text">приглашаем к сотрудничеству дилеров!</p>
+        <address class="contacts__address">ул. Большая
+          Конюшенная, д. 19/8
+          Санкт-Петербург
+        </address>
+        <img class="page-footer__logo" src="https://via.placeholder.com/150x150" alt="Лого сайта">
+      </div>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="#">Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="#">Инстаграм</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">Фейсбук</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <span class="copyright__text"> HTML Academy</span>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
