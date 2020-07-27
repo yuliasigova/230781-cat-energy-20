@@ -1,0 +1,15 @@
+.example {
+  outline: 5px solid tomato;
+  outline-offset: -5px;
+  background-color: $background-gray;
+}
+
+.example__title {
+  font-size: 36px;
+  line-height: 40px;
+  color: $basic-black;
+}
+
+.example__info {
+  font-family: "Arial", sans-serif;
+}

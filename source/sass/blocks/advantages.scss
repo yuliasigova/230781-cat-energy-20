@@ -1,0 +1,18 @@
+.advantages {
+  outline: 5px solid greenyellow;
+  outline-offset: -5px;
+}
+
+.advantages__title {
+  font-size: 36px;
+  line-height: 40px;
+  color: $basic-black;
+  margin: 0;
+}
+
+.advantages__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+}

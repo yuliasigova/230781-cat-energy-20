@@ -1,0 +1,18 @@
+.nutrition {
+  color: $basic-white;
+  outline: 5px solid coral;
+  outline-offset: -5px;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}
+
+.nutrition__title {
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0;
+}
+
+.nutrition__text {
+  line-height: 14px;
+  text-transform: uppercase;
+}

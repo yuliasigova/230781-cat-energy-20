@@ -1,0 +1,30 @@
+.ration {
+  outline: 5px solid blueviolet;
+  outline-offset: -5px;
+}
+
+.ration__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ration-card {
+  background-color: $basic-background;
+
+  &--loss {
+    margin-bottom: 20px;
+  }
+}
+
+.ration-card__title {
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: $basic-black;
+  margin: 0;
+}
+
+.ration-card__info {
+  font-family: "Arial", sans-serif;
+}
