@@ -1,14 +1,16 @@
-$basic-green: #68b738;
-$basic-background: #f2f2f2;
-$grey-border:#cdcdcd;
-$special-grey-border: #e7e7e7;
-$grey-hover: #ebebeb;
-$special-text-color: #666666;
-$basic-text-color: #444444;
-$text-color-gray: #111111;
-$title-color: #222222;
+$btn-basic-color: #68b738;
+$btn-hover-color: #5eaa2f;
 $error-color: #ff8282;
-$basic-green2: #5eaa2f;
-$basic-black: #000000;
-$basic-white: #ffffff;
-$background-gray:#eaeaea;
+
+$gray--lighten:#f2f2f2;
+$gray--light: #ebebeb;
+$gray: #eaeaea;
+$gray--dark: #e7e7e7;
+$gray--darken:#cdcdcd;
+
+$color-main--lighten: #ffffff;
+$color-main--light: #666666;
+$color-main: #444444;
+$color-main--dark: #222222;
+$color-main--darken:#111111;
+$color-main--darkest: #000000;

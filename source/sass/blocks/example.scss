@@ -1,13 +1,14 @@
 .example {
   outline: 5px solid tomato;
   outline-offset: -5px;
-  background-color: $background-gray;
+  background-color: $gray;
 }
 
 .example__title {
+  font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  color: $basic-black;
+  color: $color-main--darkest;
 }
 
 .example__info {

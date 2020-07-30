@@ -10,7 +10,7 @@
 }
 
 .ration-card {
-  background-color: $basic-background;
+  background-color: $gray--lighten;
 
   &--loss {
     margin-bottom: 20px;
@@ -18,13 +18,21 @@
 }
 
 .ration-card__title {
+  font-weight: 400;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
-  color: $basic-black;
+  color: $color-main--darkest;
   margin: 0;
 }
 
 .ration-card__info {
   font-family: "Arial", sans-serif;
+}
+
+.ration-card__link {
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $color-main--darkest;
 }

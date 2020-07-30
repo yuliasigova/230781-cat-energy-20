@@ -1,11 +1,11 @@
 .contacts {
-  background-color: $basic-white;
+  background-color: $color-main--lighten;
 }
 
 .contacts__text {
   font-size: 16px;
   text-transform: uppercase;
-  color: $text-color-gray;
+  color: $color-main--darken;
 }
 
 .contacts__address {
