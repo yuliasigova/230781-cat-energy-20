@@ -1,0 +1,14 @@
+.contacts {
+  background-color: $color-main--lighten;
+}
+
+.contacts__text {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $color-main--darken;
+}
+
+.contacts__address {
+  font-family: "Arial", sans-serif;
+  line-height: 20px;
+}

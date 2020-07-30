@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
@@ -183,16 +184,47 @@
         </li>
         <li class="catalog__item">
           <article class="product-card product-card--all">
-          <h3 class="product-card__title">Показать еще 100500 товаров</h3>
-          <p class="product-card__text">На самом деле вкусов гораздо больше!</p>
-          <a class="button" href="#">показать все</a>
+            <h3 class="product-card__title">Показать еще 100500 товаров</h3>
+            <p class="product-card__text">На самом деле вкусов гораздо больше!</p>
+            <a class="button" href="#">показать все</a>
           </article>
         </li>
       </ul>
     </section>
-    <section>
-      <h2>Дополнительные товары</h2>
+    <section class="other-product">
+      <h2 class="other-product__title">Дополнительные товары</h2>
+      <ul class="other-product__list">
+        <li class="other-product__item other-product-card">
+          <h3>Сахарозаменитель</h3>
+          <dl>
+          <dt>1 упаковка (100 г)</dt>
+          <dd>200 Р.</dd>
+          </dl>
+          <a class="button product-card__button" href="#">заказать</a>
+        </li>
+        <li>
+          <h3>питьевая вода</h3>
+          <dt>5 литров</dt>
+          <dd>50 Р.</dd>
+          <a class="button product-card__button" href="#">заказать</a>
+        </li>
+        <li>
+          <h3>молоко</h3>
+          <dt>1 литр</dt>
+          <dd>100 Р.</dd>
+          <a class="button product-card__button" href="#">заказать</a>
+        </li>
+        <li>
+          <h3>витамины</h3>
+          <dt>1 упаковка (30 г)</dt>
+          <dd>300 Р.</dd>
+          <a class="button product-card__button" href="#">заказать</a>
+        </li>
+      </ul>
     </section>
+    <div class="promo">
+      <p class="promo__info">Закажите все и получите чехол для кота в подарок!</p>
+    </div>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
@@ -202,7 +234,11 @@
           Конюшенная, д. 19/8
           Санкт-Петербург
         </address>
-        <img class="page-footer__logo" src="https://via.placeholder.com/150x150" alt="Лого сайта">
+        <img src="https://via.placeholder.com/150x150"
+          alt="Офис компании по адресу ул. Большая Конюшенная 19/8, г.Санкт-Петербург">
+      </div>
+      <div class="page-footer__logo">
+        <img src="https://via.placeholder.com/150x150" alt="Лого сайта">
       </div>
       <div class="page-footer__social social">
         <ul class="social__list">
@@ -218,8 +254,9 @@
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <span class="copyright__text"> HTML Academy</span>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="copyright__text"> HTML Academy</span>
+        </a>
       </div>
     </div>
   </footer>
