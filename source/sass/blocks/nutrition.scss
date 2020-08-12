@@ -4,6 +4,11 @@
   outline-offset: -5px;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+    color: $color-main--darkest;
+  }
 }
 
 .nutrition__title {
@@ -11,9 +16,19 @@
   font-size: 36px;
   line-height: 36px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .nutrition__text {
   line-height: 14px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

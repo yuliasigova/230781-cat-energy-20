@@ -1,0 +1,17 @@
+.footer-nav__wrapper {
+  display: grid;
+  justify-content: center;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+    padding: 0;
+  }
+}
