@@ -1,5 +1,19 @@
 .contacts {
-  background-color: $color-main--lighten;
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $color-main--lighten;
+    width: 570px;
+    outline: 5px solid yellowgreen;
+    position: absolute;
+    z-index: 1;
+    top: 95px;
+    left: 110px;
+  }
 }
 
 .contacts__text {

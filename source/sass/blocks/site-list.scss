@@ -4,6 +4,15 @@
   list-style: none;
   outline: 5px solid darkblue;
   outline-offset: -5px;
+
+  @media (min-width: $tablet-width) {
+    width: 440px;
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 478px;
+  }
 }
 
 .site-list a {
@@ -12,4 +21,16 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $color-main--darkest;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.site-list--color--white a {
+  @media (min-width: $desktop-width) {
+    color: $color-main--lighten;
+  }
 }

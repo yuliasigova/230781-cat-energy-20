@@ -3,13 +3,13 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Кэт энерджи</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
-
-  <header class="page-header">
+  <header class="page-header container">
     <a class="page-header__logo">
       <img src="https://via.placeholder.com/150x150" alt="Лого сайта">
     </a>
@@ -17,23 +17,21 @@
       <button class="main-nav__toggle" type="button">
         <span>Открыть меню</span>
       </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="index.html">главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="catalog.html">
-              каталог продукции
-            </a>
-          </li>
-          <li class="site-list__item site-list__item--active">
-            <a href="form.html">
-              подбор программы
-            </a>
-          </li>
-        </ul>
-      </div>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item site-list__item--active">
+          <a href="index.html">главная</a>
+        </li>
+        <li class="site-list__item">
+          <a href="catalog.html">
+            каталог продукции
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html">
+            подбор программы
+          </a>
+        </li>
+      </ul>
     </nav>
   </header>
 
@@ -42,37 +40,44 @@
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <div class="page-footer__contacts contacts">
-        <p class="contacts__text">приглашаем к сотрудничеству дилеров!</p>
-        <address class="contacts__address">ул. Большая
-          Конюшенная, д. 19/8
-          Санкт-Петербург
-        </address>
-        <img src="https://via.placeholder.com/150x150"
-          alt="Офис компании по адресу ул. Большая Конюшенная 19/8, г.Санкт-Петербург">
-      </div>
-      <div class="page-footer__logo">
-        <img src="https://via.placeholder.com/150x150" alt="Лого сайта">
-      </div>
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="#">Вконтакте</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="#">Инстаграм</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">Фейсбук</a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="copyright__text"> HTML Academy</span>
-        </a>
-      </div>
+    <div class="page-footer__contacts container">
+    <div class="contacts">
+      <p class="contacts__text">приглашаем к сотрудничеству дилеров!</p>
+      <address class="contacts__address">ул. Большая
+        Конюшенная, д. 19/8
+        Санкт-Петербург
+      </address>
     </div>
+  </div>
+    <div class="page-footer__map">
+      <img src="img/bg-map-mobile@1x.png" width="320" height="362"
+        alt="Офис компании по адресу ул. Большая Конюшенная 19/8, г.Санкт-Петербург">
+    </div>
+    <section class="page-footer__nav footer-nav">
+      <h2 class="visually-hidden">Информация о нас</h2>
+      <div class="footer-nav__wrapper">
+        <div class="logo">
+          <img src="https://via.placeholder.com/150x150" alt="Лого сайта">
+        </div>
+        <div class="social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="#">Вконтакте</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="#">Инстаграм</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#">Фейсбук</a>
+            </li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="copyright__text"> HTML Academy</span>
+          </a>
+        </div>
+      </div>
+    </section>
   </footer>
 </body>
