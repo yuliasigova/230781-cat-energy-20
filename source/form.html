@@ -10,8 +10,12 @@
 
 <body class="page__body">
   <header class="page-header container">
-    <a class="page-header__logo">
-      <img src="https://via.placeholder.com/150x150" alt="Лого сайта">
+    <a href="index.html" class="page-header__logo">
+      <picture>
+        <source media="(min-width: 1340px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img src="img/logo-mobile.svg" width="191" height="38" alt="Лого сайта">
+      </picture>
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
@@ -36,28 +40,115 @@
   </header>
 
   <main class="page-main">
-
+    <h1>Подбор программы</h1>
+    <p>Заполните анкету, и мы подберем
+      программу питания для вашего кота</p>
+    <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+      <fieldset>
+        <legend></legend>
+        <ul>
+          <li><label> Имя
+              <input class="name-user" type="text" name="name" placeholder="Барсик">
+            </label>
+          </li>
+          <li><label> Вес
+              <input class="name-user" type="text" name="name" placeholder="7">
+            </label>
+          </li>
+          <li><label> Возвраст
+              <input class="name-user" type="text" name="name" placeholder="7">
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>
+        </legend>
+        <ul>
+          <li>
+            <label>
+              <input type="radio"> Похудение
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="radio"> Набор массы
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="radio"> Не знаю (Нужен ваш совет)
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Контактные данные
+          (владельца кота)</legend>
+        <label>e-mail:
+          <input class="user-email" type="email" name="email" placeholder="email@example.com">
+        </label>
+        <label>Телефон:
+          <input class="user-email" type="tel" name="tel" placeholder="8 (960) 900-60-90">
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend></legend>
+        <label>Комментарии
+          <textarea name="comments" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Дополнительно</legend>
+        <ul>
+          <li>
+            <label>
+              <input type="checkbox"> сахарозаменитель
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox"> питьевая вода
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox"> молоко
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox"> витамины
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <button type="button">Отправить заявку</button>
+    </form>
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__contacts container">
-    <div class="contacts">
-      <p class="contacts__text">приглашаем к сотрудничеству дилеров!</p>
-      <address class="contacts__address">ул. Большая
-        Конюшенная, д. 19/8
-        Санкт-Петербург
-      </address>
-    </div>
-  </div>
-    <div class="page-footer__map">
-      <img src="img/bg-map-mobile@1x.png" width="320" height="362"
-        alt="Офис компании по адресу ул. Большая Конюшенная 19/8, г.Санкт-Петербург">
-    </div>
+    <section class="page-footer__contacts">
+      <h2 class="visually-hidden">Как нас найти</h2>
+      <div class="contacts container">
+        <div class="contacts__wripper contacts__wripper--white">
+          <p class="contacts__text">приглашаем<br> к сотрудничеству дилеров!</p>
+          <address class="contacts__address">ул. Большая<br>
+            Конюшенная, д. 19/8
+            Санкт-Петербург
+          </address>
+        </div>
+      </div>
+      <div class="page-footer__map">
+        <img src="img/bg-map-mobile@1x.png" width="320" height="362"
+          alt="Офис компании по адресу ул. Большая Конюшенная 19/8, г.Санкт-Петербург">
+      </div>
+    </section>
     <section class="page-footer__nav footer-nav">
       <h2 class="visually-hidden">Информация о нас</h2>
-      <div class="footer-nav__wrapper">
+      <div class="footer-nav__wrapper container">
         <div class="logo">
-          <img src="https://via.placeholder.com/150x150" alt="Лого сайта">
+          <img src="img/logo-footer.svg" width="128" height="24" alt="Лого сайта">
         </div>
         <div class="social">
           <ul class="social__list">

@@ -1,0 +1,7 @@
+.logo {
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
+}

@@ -18,7 +18,24 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 10px;
+    column-gap: 80px;
     row-gap: 63px;
+  }
+}
+
+.catalog__item {
+  border-bottom: 1px solid $gray--light;
+  padding: 8px 0 11px;
+  margin: 0 -20px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 324px;
+    border: none;
+    margin: 0;
+    padding-top: 81px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 245px;
   }
 }

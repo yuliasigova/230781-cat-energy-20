@@ -1,6 +1,11 @@
 .ration {
   outline: 5px solid blueviolet;
   outline-offset: -5px;
+  margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
 }
 
 .ration__list {
@@ -20,8 +25,90 @@
   }
 }
 
-.ration-card {
+.ration__item {
   background-color: $gray--lighten;
+}
+
+.ration-card {
+  padding: 30px 20px 18px;
+  position: relative;
+
+  &--loss::after {
+    content: "";
+    position: absolute;
+    width: 36px;
+    height: 50px;
+    top: 20px;
+    left: 27px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../img/icon-cat-slim.svg");
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 70px;
+      height: 97px;
+      display: block;
+      left: 70px;
+      top: 40px;
+    }
+  }
+
+  &--gain::after {
+    content: "";
+    position: absolute;
+    width: 67px;
+    height: 28px;
+    top: 34px;
+    left: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../img/icon-cat-pro.svg");
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 134px;
+      height: 56px;
+      display: block;
+      top: 62px;
+      left: 39px;
+    }
+  }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: $btn-basic-color;
+    border-radius: 50%;
+    top: 24px;
+
+    @media (min-width: $tablet-width) {
+      width: 200px;
+      height: 200px;
+      right: 50px;
+      top: 81px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 100px;
+      height: 100px;
+      left: 53px;
+      top: 50px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 53px 60px 53px;
+  }
 }
 
 .ration-card__title {
@@ -31,16 +118,47 @@
   text-transform: uppercase;
   color: $color-main--darkest;
   margin: 0;
+  margin-bottom: 30px;
+  padding-left: 70px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 162px;
+    margin-bottom: 73px;
+  }
 }
 
 .ration-card__info {
   font-family: "Arial", sans-serif;
   margin: 0;
+  padding-bottom: 23px;
+  border-bottom: 1px solid $border-color--light;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    padding-right: 210px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+  }
 }
 
 .ration-card__link {
+  display: block;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   color: $color-main--darkest;
+  padding-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

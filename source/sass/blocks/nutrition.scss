@@ -4,10 +4,23 @@
   outline-offset: -5px;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-position: top center;
+  margin-bottom: 22px;
+  text-align: center;
+  padding-top: 27px;
 
   @media (min-width: $tablet-width) {
     background-image: none;
     color: $color-main--darkest;
+    text-align: left;
+    padding-left: 80px;
+    padding-top: 62px;
+    position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 90px;
+    margin-bottom: 82px;
   }
 }
 
@@ -16,19 +29,34 @@
   font-size: 36px;
   line-height: 36px;
   margin: 0;
+  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 41px;
   }
 }
 
 .nutrition__text {
   line-height: 14px;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+  }
+}
+
+.nutrition__button {
+  padding: 7px 44px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    padding: 14px 26px;
+    position: absolute;
+    top: 320px;
   }
 }

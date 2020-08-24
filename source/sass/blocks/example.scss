@@ -2,15 +2,53 @@
   outline: 5px solid tomato;
   outline-offset: -5px;
   background-color: $gray;
+  padding-top: 27px;
+  padding-bottom: 22px;
 }
 
 .example__title {
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+  margin: 0;
+  margin-bottom: 33px;
   color: $color-main--darkest;
 }
 
 .example__info {
   font-family: "Arial", sans-serif;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.example__table {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 31px;
+  text-align: center;
+}
+
+.example__value {
+  font-size: 24px;
+  line-height: 24px;
+  color: $color-main--darkest;
+  border: 1px solid $gray--darken;
+  border-radius: 3px;
+  padding: 15px 0 18px;
+}
+
+.example__description {
+  font-size: 12px;
+  line-height: 12px;
+  font-family: "Arial", sans-serif;
+  margin: -12px 12px 0;
+  background-color: $gray;
+  grid-row: 2 / 2;
+}
+
+.example__price {
+  line-height: 20px;
+  color: $color-main--darkest;
+  text-align: center;
 }

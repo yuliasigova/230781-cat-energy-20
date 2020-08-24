@@ -4,4 +4,12 @@
   line-height: 36px;
   color: $color-main--darkest;
   margin: 0;
+  padding-top: 27px;
+  margin-bottom: 41px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 91px;
+  }
 }

@@ -4,12 +4,18 @@
   font-family: "Oswald", "Arial", sans-serif;
   line-height: 18px;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .page__body {
+  min-width: 320px;
   min-height: 100%;
   margin: 0;
-  color: #444444;
+  color: $color-main;
 }
 
 .page__body--background {
@@ -24,7 +30,7 @@
       height: 696px;
       background-image: url("../img/index-background-desktop@1x.jpg");
       background-repeat: no-repeat;
-      top: 0;
+      top: -55px;
       right: 0;
       z-index: -1;
     }

@@ -1,11 +1,37 @@
 .page-header {
   outline: 5px solid hotpink;
   outline-offset: -5px;
-  display: flex;
-  flex-direction: column;
+  margin-top: 12px;
+
+  @media (max-width: $mobile-width-only) {
+    position: relative;
+  }
 
   @media (min-width: $tablet-width) {
+    margin-top: 24px;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 55px;
+  }
+}
+
+.page-header__logo img {
+  margin-bottom: 15px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
   }
 }

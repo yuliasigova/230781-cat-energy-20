@@ -2,16 +2,29 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  outline: 5px solid darkblue;
-  outline-offset: -5px;
 
   @media (min-width: $tablet-width) {
-    width: 440px;
     display: flex;
-  }
+    flex-wrap: wrap;
 
-  @media (min-width: $desktop-width) {
-    width: 478px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.site-list__item {
+  padding: 21px 0 22px;
+  border-top: 1px solid $border-color--lighten;
+  text-align: center;
+  margin: 0 -20px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 37px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
@@ -26,6 +39,11 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
