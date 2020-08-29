@@ -45,7 +45,12 @@
     background-image: url("../img/icon-cat-slim.svg");
 
     @media (min-width: $tablet-width) {
-      display: none;
+      display: block;
+      width: 140px;
+      height: 192px;
+      top: 70px;
+      left: auto;
+      right: 90px;
     }
 
     @media (min-width: $desktop-width) {
@@ -69,7 +74,11 @@
     background-image: url("../img/icon-cat-pro.svg");
 
     @media (min-width: $tablet-width) {
-      display: none;
+      width: 268px;
+      height: 112px;
+      left: auto;
+      top: 135px;
+      right: 20px;
     }
 
     @media (min-width: $desktop-width) {
@@ -156,9 +165,27 @@
   text-transform: uppercase;
   color: $color-main--darkest;
   padding-top: 15px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../img/icon-right-arrow-long.svg");
+    top: 18px;
+    left: 100px;
+
+    @media (min-width: $tablet-width) {
+      top: 25px;
+      left: 130px;
+    }
   }
 }

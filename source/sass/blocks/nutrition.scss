@@ -2,9 +2,8 @@
   color: $color-main--lighten;
   outline: 5px solid coral;
   outline-offset: -5px;
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
+  background: url("../img/index-background-mobile@1x.jpg") no-repeat top center,
+    linear-gradient(to bottom, #64a93c 305px, white 100px);
   margin-bottom: 22px;
   text-align: center;
   padding-top: 27px;
@@ -58,5 +57,15 @@
     padding: 14px 26px;
     position: absolute;
     top: 320px;
+  }
+}
+
+.nutrition__img {
+  @media (min-width: $desktop-width) {
+    width: 552px;
+    height: 499px;
+    display: block;
+    margin-left: 380px;
+    margin-top: -290px;
   }
 }

@@ -6,7 +6,6 @@
   display: flex;
   padding: 28px 0 22px;
 
-
   @media (min-width: $tablet-width) {
     justify-content: space-between;
     padding: 62px 41px 51px;
@@ -37,6 +36,7 @@
 .contacts__address {
   width: 50%;
   font-family: "Arial", sans-serif;
+  font-style: normal;
   line-height: 20px;
 
   @media (min-width: $tablet-width) {
