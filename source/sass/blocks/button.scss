@@ -1,0 +1,17 @@
+.button {
+  display: block;
+  text-align: center;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $color-main--lighten;
+  background-color: $btn-basic-color;
+  border: none;
+
+
+  &:hover,
+  &:focus {
+    background-color: $btn-hover-color;
+  }
+}

@@ -4,12 +4,18 @@
   font-family: "Oswald", "Arial", sans-serif;
   line-height: 18px;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .page__body {
+  min-width: 320px;
   min-height: 100%;
   margin: 0;
-  color: #444444;
+  color: $color-main;
 }
 
 .page__body--background {
@@ -20,11 +26,13 @@
       content: "";
 
       position: absolute;
-      width: 720px;
+      width: 100%;
       height: 696px;
-      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-image: url("../img/index-background-desktop@1x.jpg"),
+        linear-gradient(to right, $color-main--lighten 50%, #64a93c 50%);
       background-repeat: no-repeat;
-      top: 0;
+      background-position: right center;
+      top: -55px;
       right: 0;
       z-index: -1;
     }

@@ -1,6 +1,7 @@
 .advantages {
   outline: 5px solid greenyellow;
   outline-offset: -5px;
+  padding-bottom: 22px;
 }
 
 .advantages__title {
@@ -9,6 +10,12 @@
   line-height: 40px;
   color: $color-main--darkest;
   margin: 0;
+  margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .advantages__list {
@@ -20,8 +27,9 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 137px;
+    column-gap: 70px;
     row-gap: 37px;
+    counter-reset: section;
   }
 
   @media (min-width: $desktop-width) {
@@ -33,8 +41,75 @@
 .advantages__item {
   margin-bottom: 20px;
   padding-left: 80px;
+  position: relative;
+
+  @media (max-width: $mobile-width-only) {
+    br {
+      display: none;
+    }
+  }
 
   @media (min-width: $tablet-width) {
-    width: 246px;
+    padding: 0;
+    padding-top: 145px;
+    padding-right: 70px;
+    counter-increment: section;
+    min-height: 260px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+  }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: $btn-basic-color;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+      top: 32px;
+    }
+  }
+
+  &--healthy::before {
+    background-image: url("../img/advantage-leaf@1x.png");
+  }
+
+  &--product::before {
+    background-image: url("../img/advantage-powder@1x.png");
+  }
+
+  &--ration::before {
+    background-image: url("../img/advantage-dining@1x.png");
+  }
+
+  &--time::before {
+    background-image: url("../img/advantage-clock@1x.png");
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: counter(section);
+      position: absolute;
+      font-family: "Oswald", sans-serif;
+      font-size: 280px;
+      line-height: 280px;
+      color: $gray--lighten;
+      top: -10px;
+      right: 80px;
+      z-index: -1;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 0;
+    }
   }
 }

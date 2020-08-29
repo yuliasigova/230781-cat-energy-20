@@ -1,8 +1,14 @@
 .contacts {
+  position: relative;
+}
+
+.contacts__wripper {
   display: flex;
+  padding: 28px 0 22px;
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
+    padding: 62px 41px 51px;
   }
 
   @media (min-width: $desktop-width) {
@@ -12,17 +18,28 @@
     position: absolute;
     z-index: 1;
     top: 95px;
-    left: 110px;
   }
 }
 
 .contacts__text {
+  width: 50%;
   font-size: 16px;
   text-transform: uppercase;
   color: $color-main--darken;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 171px;
+  }
 }
 
 .contacts__address {
+  width: 50%;
   font-family: "Arial", sans-serif;
+  font-style: normal;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 159px;
+  }
 }
