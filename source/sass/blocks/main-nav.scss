@@ -25,3 +25,30 @@
     right: 0;
   }
 }
+
+.main-nav--closed .main-nav__list {
+  display: none;
+}
+
+.main-nav--opened .main-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background-color: $color-main--darkest;
+    right: 0;
+    top: 10px;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
