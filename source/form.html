@@ -17,9 +17,9 @@
         <img src="img/logo-mobile.svg" width="191" height="38" alt="Лого сайта">
       </picture>
     </a>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--opened">
       <button class="main-nav__toggle" type="button">
-        <span>Открыть меню</span>
+        <span class="visually-hidden">Открыть меню</span>
       </button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item--active">
@@ -140,8 +140,14 @@
         </div>
       </div>
       <div class="page-footer__map">
-        <img src="img/bg-map-mobile@1x.png" width="320" height="362"
-          alt="Офис компании по адресу ул. Большая Конюшенная 19/8, г.Санкт-Петербург">
+        <picture>
+          <source media="(min-width: 1340px)" srcset="img/bg-map-desktop@1x.png,
+              img/bg-map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png,
+              img/bg-map-tablet@2x.png 2x">
+          <img src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" width="320" height="362"
+            alt="Офис компании по адресу ул. Большая Конюшенная 19/8, г.Санкт-Петербург">
+        </picture>
       </div>
     </section>
     <section class="page-footer__nav footer-nav">
@@ -171,4 +177,8 @@
       </div>
     </section>
   </footer>
+  <script src="js/main-nav.js"></script>
 </body>
+  <script src="js/main-nav.js"></script>
+</body>
+</html>
