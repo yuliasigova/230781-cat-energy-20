@@ -1,7 +1,7 @@
 .advantages {
   outline: 5px solid greenyellow;
   outline-offset: -5px;
-  padding-bottom: 22px;
+  padding-bottom: 19px;
 }
 
 .advantages__title {
@@ -10,7 +10,7 @@
   line-height: 40px;
   color: $color-main--darkest;
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -39,7 +39,7 @@
 }
 
 .advantages__item {
-  margin-bottom: 20px;
+  margin-bottom: 27px;
   padding-left: 80px;
   position: relative;
 

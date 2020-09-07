@@ -3,7 +3,19 @@
   outline-offset: -5px;
   background-color: $gray;
   padding-top: 27px;
-  padding-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 43px;
+    background-color: $color-main--lighten;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 74px;
+    max-width: 1220px;
+    margin: auto;
+  }
 }
 
 .example__title {
@@ -13,12 +25,49 @@
   margin: 0;
   margin-bottom: 33px;
   color: $color-main--darkest;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 137px;
+  }
 }
 
 .example__info {
   font-family: "Arial", sans-serif;
   margin: 0;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    br {
+      display: none;
+    }
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
+  }
+}
+
+.example__wrapper {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 250px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    width: 436px;
+  }
 }
 
 .example__table {
@@ -27,6 +76,10 @@
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 31px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    grid-column-gap: 42px;
+  }
 }
 
 .example__value {
@@ -37,6 +90,12 @@
   border-radius: 3px;
   padding: 15px 0 18px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+    width: 162px;
+  }
 }
 
 .example__description {
@@ -46,6 +105,16 @@
   margin: -12px 12px 0;
   background-color: $gray;
   grid-row: 2 / 2;
+
+  @media (min-width: $tablet-width) {
+    background-color: $color-main--lighten;
+    font-size: 14px;
+    line-height: 14px;
+
+    br {
+      display: none;
+    }
+  }
 }
 
 .example__price {
@@ -55,8 +124,36 @@
   text-transform: uppercase;
   margin: 0;
   margin-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    text-align: right;
+    margin-top: 10px;
+
+    @media (min-width: $desktop-width) {
+      margin-top: 55px;
+      display: flex;
+    }
+  }
+}
+
+.example__price span {
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-top: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-left: 60px;
+  }
 }
 
 .example__slider {
-  margin: 37px -20px 23px;
+  margin-top: 37px;
+  background-color: $gray;
+
+  @media (min-width: $desktop-width) {
+    background: none;
+  }
 }

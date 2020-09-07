@@ -10,10 +10,12 @@
   list-style: none;
   display: grid;
   row-gap: 19px;
+  margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 1fr);
     gap: 60px;
+    margin-bottom: 67px;
   }
 
   @media (min-width: $desktop-width) {

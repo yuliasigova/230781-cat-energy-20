@@ -1,7 +1,10 @@
 .logo {
   text-align: center;
 
+
   @media (min-width: $tablet-width) {
+    display: flex;
     text-align: left;
+    padding-top: 10px;
   }
 }

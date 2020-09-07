@@ -1,16 +1,57 @@
 .range-filter {
-  width: 84px;
+  width: 89px;
   height: 12px;
-  background: #ffffff;
+  background: $color-main--lighten;
   border-radius: 6px;
-  border: 1px solid #cdcdcd;
-  padding: 2px 6px;
+  border: 1px solid $gray--darken;
+  padding: 2px 9px;
   align-self: center;
+
+  @media (min-width: $tablet-width) {
+    width: 428px;
+    height: 6px;
+    background: #dcdcdc;
+    position: relative;
+  }
 }
 
 .range-filter__scale {
   width: 50%;
   height: 6px;
-  background: #68b738;
+  background: $btn-basic-color;
   border-radius: 6px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: 34px;
+    height: 34px;
+    background: $color-main--lighten;
+    border: 1px solid $gray--darken;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
+    top: -15px;
+    left: 50%;
+
+    &:focus,
+    &:hover {
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19);
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+      border-color: $btn-basic-color;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: $btn-basic-color;
+      top: 12px;
+      left: 12px;
+    }
+  }
 }

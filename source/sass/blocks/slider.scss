@@ -1,3 +1,15 @@
+.slider {
+  padding-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
 .slider__list {
   list-style: none;
   margin: 0;
@@ -9,5 +21,17 @@
 
   &--hidden {
     display: none;
+  }
+}
+
+.slider__item img {
+  @media (min-width: $tablet-width) {
+    width: 670px;
+    height: 520px;
+    margin-top: -160px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -65px;
   }
 }

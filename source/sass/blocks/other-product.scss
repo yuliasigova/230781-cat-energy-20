@@ -1,0 +1,124 @@
+.other-product {
+  display: block;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 79px;
+    margin-bottom: 48px;
+  }
+}
+
+.other-product__title {
+  font-size: 24px;
+  line-height: 24px;
+  color: $color-main--darkest;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 80px;
+  }
+}
+
+.other-product__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-bottom: 39px;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1;
+  }
+}
+
+.other-product__item {
+  padding-top: 13px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #cdcdcd;
+
+  &:first-child {
+    border-top: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding-right: 38px;
+    padding-left: 38px;
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+    padding-top: 26px;
+    padding-bottom: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr auto auto;
+    column-gap: 40px;
+    padding: 0;
+    padding-top: 19px;
+    padding-bottom: 14px;
+    align-items: baseline;
+  }
+}
+
+.other-product__item h3 {
+  margin: 0;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $color-main--dark;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.other-product__item dl {
+  margin: 0;
+  margin-top: 12px;
+  margin-bottom: 17px;
+  display: flex;
+  justify-content: space-between;
+  line-height: 14px;
+  font-family: "Arial", sans-serif;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 4px;
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    width: 285px;
+    justify-content: space-between;
+  }
+}
+
+.other-product__item dd {
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-left: 48px;
+  }
+}
+
+.other-product__button {
+  padding: 9px 44px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 3;
+    width: 244px;
+  }
+}

@@ -30,7 +30,7 @@
 }
 
 .ration-card {
-  padding: 30px 20px 18px;
+  padding: 30px 20px 21px;
   position: relative;
 
   &--loss::after {
@@ -38,8 +38,8 @@
     position: absolute;
     width: 36px;
     height: 50px;
-    top: 20px;
-    left: 27px;
+    top: 23px;
+    left: 29px;
     background-repeat: no-repeat;
     background-position: center;
     background-image: url("../img/icon-cat-slim.svg");
@@ -67,8 +67,8 @@
     position: absolute;
     width: 67px;
     height: 28px;
-    top: 34px;
-    left: 10px;
+    top: 37px;
+    left: 13px;
     background-repeat: no-repeat;
     background-position: center;
     background-image: url("../img/icon-cat-pro.svg");
@@ -98,7 +98,7 @@
     height: 50px;
     background-color: $btn-basic-color;
     border-radius: 50%;
-    top: 24px;
+    top: 26px;
 
     @media (min-width: $tablet-width) {
       width: 200px;
@@ -164,7 +164,7 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $color-main--darkest;
-  padding-top: 15px;
+  padding-top: 18px;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -180,12 +180,20 @@
     background-repeat: no-repeat;
     background-position: center;
     background-image: url("../img/icon-right-arrow-long.svg");
-    top: 18px;
-    left: 100px;
+    top: 22px;
+    left: 97px;
 
     @media (min-width: $tablet-width) {
       top: 25px;
       left: 130px;
     }
+  }
+}
+
+.ration-card__link:active {
+  color: $color-main--darkest-30;
+
+  &::after {
+    opacity: 0.3;
   }
 }
