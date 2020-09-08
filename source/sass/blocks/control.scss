@@ -11,6 +11,22 @@
   font-size: 16px;
   line-height: 20px;
   padding: 0;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    border-bottom: 1px dashed $color-main--darkest-24;
+
+    &:focus,
+    &:hover {
+      border-bottom: 1px solid $color-main--darkest-40;
+    }
+
+    &:active {
+      border: none;
+    }
+  }
 }
 
 .control__range-filter {

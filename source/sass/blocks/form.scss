@@ -1,0 +1,35 @@
+.form {
+  padding-top: 27px;
+  padding-bottom: 39px;
+  color: $color-main--darkest;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 46px;
+    padding-bottom: 66px;
+  }
+}
+
+.form__title {
+  margin: 0;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 54px;
+  }
+}
+
+.form__text {
+  margin: 0;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 0 40px;
+  }
+}

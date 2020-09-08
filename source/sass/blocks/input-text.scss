@@ -1,0 +1,51 @@
+.input-text {
+  padding: 0 20px;
+  border: none;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 70px;
+  }
+}
+
+.input-text__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding-bottom: 9px;
+}
+
+.input-text__label {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.input-text__input {
+  padding: 12px 15px;
+  margin-left: 15px;
+  border: 1px solid #e7e7e7;
+  display: flex;
+  flex-grow: 1;
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 18px;
+    color: $color-main;
+    text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}

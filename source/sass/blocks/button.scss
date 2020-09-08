@@ -9,9 +9,12 @@
   background-color: $btn-basic-color;
   border: none;
 
-
   &:hover,
   &:focus {
     background-color: $btn-hover-color;
+  }
+
+  &:active {
+    color: $color-main--lighten-30;
   }
 }

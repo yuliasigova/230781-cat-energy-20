@@ -3,9 +3,11 @@
   padding: 0;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  align-items: center;
+  margin-top: 27px;
+  margin-bottom: 27px;
   padding-top: 20px;
   padding-bottom: 20px;
   border-top: 1px solid $border-color--light;
@@ -13,5 +15,56 @@
 
   @media (min-width: $tablet-width) {
     border: none;
+    margin: 0;
+    width: 130px;
+    margin-left: 10px;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+
+.social__item {
+  margin-right: 35px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.social__icon {
+  fill: $color-main--light;
+
+  &:focus,
+  &:hover {
+    fill: $btn-basic-color;
+  }
+
+  &:active {
+    fill: $btn-basic-color-30;
+  }
+
+  &--vkontakte {
+    @media (min-width: $tablet-width) {
+      width: 30px;
+      height: 22px;
+    }
+  }
+
+  &--instagram {
+    @media (min-width: $tablet-width) {
+      width: 23px;
+      height: 23px;
+    }
+  }
+
+  &--facebook {
+    @media (min-width: $tablet-width) {
+      width: 13px;
+      height: 28px;
+    }
   }
 }

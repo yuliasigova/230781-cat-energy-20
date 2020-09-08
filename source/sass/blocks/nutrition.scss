@@ -57,7 +57,9 @@
 }
 
 .nutrition__button {
-  padding: 7px 44px;
+  padding: 9px 44px;
+  font-size: 14px;
+  line-height: 18px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

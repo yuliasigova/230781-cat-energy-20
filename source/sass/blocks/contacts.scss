@@ -4,7 +4,7 @@
 
 .contacts__wripper {
   display: flex;
-  padding: 28px 0 22px;
+  padding: 28px 0 25px;
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
@@ -16,7 +16,7 @@
     width: 570px;
     outline: 5px solid yellowgreen;
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     top: 95px;
   }
 }
