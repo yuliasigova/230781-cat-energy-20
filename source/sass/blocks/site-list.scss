@@ -20,6 +20,10 @@
   margin: 0 -20px;
   position: relative;
 
+  &:last-child {
+    border-bottom: 1px solid $border-color--lighten;
+  }
+
   @media (min-width: $tablet-width) {
     margin: 0;
     margin-right: 35px;
@@ -28,6 +32,7 @@
 
     &:last-child {
       margin-right: 0;
+      border: none;
     }
 
     &--active::after {
@@ -37,9 +42,13 @@
       width: 100%;
       height: 2px;
       display: block;
-      background-color: #68b738;
+      background-color: $btn-basic-color;
     }
   }
+}
+
+.site-list--color--white .site-list__item::after {
+  background-color: $color-main--lighten;
 }
 
 .site-list a {

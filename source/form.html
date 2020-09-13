@@ -79,95 +79,112 @@
         программу питания для вашего кота</p>
     </div>
     <form class="filter" action="https://echo.htmlacademy.ru" method="get">
-      <fieldset class="filter__text input-text">
-        <legend class="visually-hidden"> Данные кота</legend>
-        <ul class="input-text__list">
-          <li class="input-text__item">
-            <label class="input-text__label"> Имя:<sup>*</sup>
-              <input class="input-text__input" type="text" name="name" placeholder="Барсик" required>
-            </label>
-          </li>
-          <li class="input-text__item">
-            <label class="input-text__label"> Вес (кг):<sup>*</sup>
-              <input class="input-text__input" type="text" name="weight" placeholder="7" required>
-            </label>
-          </li>
-          <li class="input-text__item">
-            <label class="input-text__label"> Возраст (лет):
-              <input class="input-text__input" type="text" name="age" placeholder="7">
-            </label>
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset class="filter__radio input-radio">
-        <legend class="visually-hidden"> Выбор программы </legend>
-        <ul class="input-radio__list">
-          <li class="input-radio__item">
-            <input class="visually-hidden input-radio__input" id="input-loss" type="radio" name="weight" value="loss">
-            <label class="input-radio__label" for="input-loss"> Похудение
-            </label>
-          </li>
-          <li class="input-radio__item">
-            <label class="input-radio__label">
-              <input class="visually-hidden input-radio__input" type="radio" name="weight" value="gain" checked> Набор
-              массы
-            </label>
-          </li>
-          <li class="input-radio__item">
-            <label class="input-radio__label">
-              <input class="visually-hidden input-radio__input" type="radio" name="weight" value="advice"> Не знаю
-              (Нужен ваш совет)
-            </label>
-          </li>
-        </ul>
-      </fieldset>
+      <div class="filter__container">
+        <fieldset class="filter__text input-text">
+          <legend class="visually-hidden"> Данные кота</legend>
+          <ul class="input-text__list">
+            <li class="input-text__item">
+              <label class="input-text__label"> Имя:<sup>*</sup>
+                <input class="input-text__input" type="text" name="name" placeholder="Барсик" required>
+              </label>
+            </li>
+            <li class="input-text__item">
+              <label class="input-text__label"> Вес (кг):<sup>*</sup>
+                <input class="input-text__input" type="text" name="weight" placeholder="7" required>
+              </label>
+            </li>
+            <li class="input-text__item">
+              <label class="input-text__label"> Возраст (лет):
+                <input class="input-text__input" type="text" name="age" placeholder="7">
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="filter__radio input-radio">
+          <legend class="visually-hidden"> Выбор программы </legend>
+          <ul class="input-radio__list">
+            <li class="input-radio__item">
+              <input class="visually-hidden input-radio__input" id="input-loss" type="radio" name="weight" value="loss"
+                checked>
+              <label class="input-radio__label" for="input-loss"> Похудение
+              </label>
+            </li>
+            <li class="input-radio__item">
+              <input class="visually-hidden input-radio__input" id="input-gain" type="radio" name="weight" value="gain">
+              <label class="input-radio__label" for="input-gain"> Набор массы
+              </label>
+            </li>
+            <li class="input-radio__item">
+              <input class="visually-hidden input-radio__input" id="input-advice" type="radio" name="weight"
+                value="advice">
+              <label class="input-radio__label" for="input-advice"> Не знаю
+                (Нужен ваш совет)
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
       <fieldset class="filter__data user-data">
         <legend class="user-data__title">Контактные данные <br>
           (владельца кота)</legend>
-        <label class="user-data__label">e-mail:<sup>*</sup>
-          <input class="user-data__input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
-        </label>
-        <label class="user-data__label">Телефон:<sup>*</sup>
-          <input class="user-data__input" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
-        </label>
+        <div class="user-data__wrapper">
+          <label class="user-data__label user-data__label--email">e-mail:<sup>*</sup>
+            <input class="user-data__input user-data__input--email" type="email" name="email"
+              placeholder="kuklachev@gmail.com" required>
+          </label>
+          <label class="user-data__label user-data__label--tel">Телефон:<sup>*</sup>
+            <input class="user-data__input user-data__input--tel" type="tel" name="tel" placeholder="8 (960) 900-60-90"
+              required>
+          </label>
+        </div>
       </fieldset>
       <fieldset class="filter__textarea user-comments">
-        <legend class="user-comments__title"> Комментарии</legend>
-        <label class="user-comments__label">
-          <textarea class="user-comments__textarea" name="comments"
-            placeholder="Расскажите обо всех повадках кота"></textarea>
-        </label>
+        <legend class="user-comments__title"> Комментарий</legend>
+        <div class="user-comments__wrapper">
+          <label class="user-comments__label">
+            <textarea class="user-comments__textarea" name="comments"
+              placeholder="Расскажите обо всех повадках кота"></textarea>
+          </label>
+        </div>
       </fieldset>
       <fieldset class="filter__checkbox input-checkbox">
         <legend class="input-checkbox__title">Дополнительно</legend>
-        <ul class="input-checkbox__list">
-          <li class="input-checkbox__item">
-            <label class="input-checkbox__label">
-              <input class="visually-hidden input-checkbox__input" type="checkbox" checked> сахарозаменитель
-            </label>
-          </li>
-          <li class="input-checkbox__item">
-            <label class="input-checkbox__label">
-              <input class="visually-hidden" type="checkbox"> питьевая вода
-            </label>
-          </li>
-          <li class="input-checkbox__item">
-            <label class="input-checkbox__label">
-              <input class="visually-hidden" type="checkbox"> молоко
-            </label>
-          </li>
-          <li class="input-checkbox__item">
-            <label class="input-checkbox__label">
-              <input class="visually-hidden" type="checkbox"> витамины
-            </label>
-          </li>
-        </ul>
+        <div class="input-checkbox__wrapper">
+          <ul class="input-checkbox__list">
+            <li class="input-checkbox__item">
+              <label class="input-checkbox__label">
+                <input class="visually-hidden input-checkbox__input" type="checkbox" checked> сахарозаменитель
+                <span class="input-checkbox__box"></span>
+              </label>
+            </li>
+            <li class="input-checkbox__item">
+              <label class="input-checkbox__label">
+                <input class="visually-hidden input-checkbox__input" type="checkbox"> питьевая вода
+                <span class="input-checkbox__box"></span>
+              </label>
+            </li>
+            <li class="input-checkbox__item">
+              <label class="input-checkbox__label">
+                <input class="visually-hidden input-checkbox__input" type="checkbox"> молоко
+                <span class="input-checkbox__box"></span>
+              </label>
+            </li>
+            <li class="input-checkbox__item">
+              <label class="input-checkbox__label">
+                <input class="visually-hidden input-checkbox__input" type="checkbox"> витамины
+                <span class="input-checkbox__box"></span>
+              </label>
+            </li>
+          </ul>
+        </div>
       </fieldset>
-      <button class="filter__button button" type="button">Отправить заявку</button>
+      <div class="filter__wrapper">
+        <button class="filter__button button" type="submit">Отправить заявку</button>
+        <p class="filter__remark">
+          * — Обязательные поля
+        </p>
+      </div>
     </form>
-    <p class="page-main__text">
-      * — Обязательные поля
-    </p>
   </main>
 
   <footer class="page-footer">
@@ -178,7 +195,7 @@
           <p class="contacts__text">приглашаем<br> к сотрудничеству дилеров!</p>
           <address class="contacts__address">ул. Большая<br>
             Конюшенная, д. 19/8
-            Санкт-Петербург
+            <span>Санкт-Петербург</span>
           </address>
         </div>
       </div>

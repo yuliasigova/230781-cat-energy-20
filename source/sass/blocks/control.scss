@@ -2,6 +2,16 @@
   display: flex;
   justify-content: center;
   margin-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 30px;
+    justify-content: space-between;
+    padding-left: 75px;
+  }
 }
 
 .control__button {
@@ -25,6 +35,14 @@
 
     &:active {
       border: none;
+    }
+
+    &--before {
+      margin-right: 15px;
+
+      @media (min-width: $desktop-width) {
+        margin: 0;
+      }
     }
   }
 }

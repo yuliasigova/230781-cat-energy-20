@@ -1,10 +1,18 @@
 .input-text {
-  padding: 0 20px;
+  padding: 0 17px;
   border: none;
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid $border-color--light;
 
   @media (min-width: $tablet-width) {
     padding: 0 70px;
+    border: none;
+    margin-bottom: 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    margin-right: 76px;
+    padding: 0;
   }
 }
 
@@ -27,15 +35,21 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    margin-bottom: 23px;
   }
 }
 
 .input-text__input {
   padding: 12px 15px;
   margin-left: 15px;
-  border: 1px solid #e7e7e7;
+  border: 1px solid $gray--dark;
   display: flex;
   flex-grow: 1;
+
+  @media (min-width: $tablet-width) {
+    padding: 12px 17px;
+    margin-left: 19px;
+  }
 
   &::placeholder {
     font-size: 16px;
