@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Кэт энерджи</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/styles.min.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
@@ -124,60 +124,66 @@
           </ul>
         </fieldset>
       </div>
-      <fieldset class="filter__data user-data">
-        <legend class="user-data__title">Контактные данные <br>
-          (владельца кота)</legend>
-        <div class="user-data__wrapper">
-          <label class="user-data__label user-data__label--email">e-mail:<sup>*</sup>
-            <input class="user-data__input user-data__input--email" type="email" name="email"
-              placeholder="kuklachev@gmail.com" required>
-          </label>
-          <label class="user-data__label user-data__label--tel">Телефон:<sup>*</sup>
-            <input class="user-data__input user-data__input--tel" type="tel" name="tel" placeholder="8 (960) 900-60-90"
-              required>
-          </label>
-        </div>
-      </fieldset>
-      <fieldset class="filter__textarea user-comments">
-        <legend class="user-comments__title"> Комментарий</legend>
-        <div class="user-comments__wrapper">
-          <label class="user-comments__label">
-            <textarea class="user-comments__textarea" name="comments"
-              placeholder="Расскажите обо всех повадках кота"></textarea>
-          </label>
-        </div>
-      </fieldset>
-      <fieldset class="filter__checkbox input-checkbox">
-        <legend class="input-checkbox__title">Дополнительно</legend>
-        <div class="input-checkbox__wrapper">
-          <ul class="input-checkbox__list">
-            <li class="input-checkbox__item">
-              <label class="input-checkbox__label">
-                <input class="visually-hidden input-checkbox__input" type="checkbox" checked> сахарозаменитель
-                <span class="input-checkbox__box"></span>
-              </label>
-            </li>
-            <li class="input-checkbox__item">
-              <label class="input-checkbox__label">
-                <input class="visually-hidden input-checkbox__input" type="checkbox"> питьевая вода
-                <span class="input-checkbox__box"></span>
-              </label>
-            </li>
-            <li class="input-checkbox__item">
-              <label class="input-checkbox__label">
-                <input class="visually-hidden input-checkbox__input" type="checkbox"> молоко
-                <span class="input-checkbox__box"></span>
-              </label>
-            </li>
-            <li class="input-checkbox__item">
-              <label class="input-checkbox__label">
-                <input class="visually-hidden input-checkbox__input" type="checkbox"> витамины
-                <span class="input-checkbox__box"></span>
-              </label>
-            </li>
-          </ul>
-        </div>
-      </fieldset>
+      <div class="filter__box filter__box--user-data">
+        <fieldset class="filter__data user-data container">
+          <legend class="user-data__title">Контактные данные <br>
+            (владельца кота)</legend>
+          <div class="user-data__wrapper">
+            <label class="user-data__label user-data__label--email">e-mail:<sup>*</sup>
+              <input class="user-data__input user-data__input--email" type="email" name="email"
+                placeholder="kuklachev@gmail.com" required>
+            </label>
+            <label class="user-data__label user-data__label--tel">Телефон:<sup>*</sup>
+              <input class="user-data__input user-data__input--tel" type="tel" name="tel"
+                placeholder="8 (960) 900-60-90" required>
+            </label>
+          </div>
+        </fieldset>
+      </div>
+      <div class="filter__box">
+        <fieldset class="filter__textarea user-comments container">
+          <legend class="user-comments__title"> Комментарий</legend>
+          <div class="user-comments__wrapper">
+            <label class="user-comments__label">
+              <textarea class="user-comments__textarea" name="comments"
+                placeholder="Расскажите обо всех повадках кота"></textarea>
+            </label>
+          </div>
+        </fieldset>
+      </div>
+      <div class="filter__box">
+        <fieldset class="filter__checkbox input-checkbox container">
+          <legend class="input-checkbox__title">Дополнительно</legend>
+          <div class="input-checkbox__wrapper">
+            <ul class="input-checkbox__list">
+              <li class="input-checkbox__item">
+                <label class="input-checkbox__label">
+                  <input class="visually-hidden input-checkbox__input" type="checkbox" checked> сахарозаменитель
+                  <span class="input-checkbox__box"></span>
+                </label>
+              </li>
+              <li class="input-checkbox__item">
+                <label class="input-checkbox__label">
+                  <input class="visually-hidden input-checkbox__input" type="checkbox"> питьевая вода
+                  <span class="input-checkbox__box"></span>
+                </label>
+              </li>
+              <li class="input-checkbox__item">
+                <label class="input-checkbox__label">
+                  <input class="visually-hidden input-checkbox__input" type="checkbox"> молоко
+                  <span class="input-checkbox__box"></span>
+                </label>
+              </li>
+              <li class="input-checkbox__item">
+                <label class="input-checkbox__label">
+                  <input class="visually-hidden input-checkbox__input" type="checkbox"> витамины
+                  <span class="input-checkbox__box"></span>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+      </div>
       <div class="filter__wrapper">
         <button class="filter__button button" type="submit">Отправить заявку</button>
         <p class="filter__remark">

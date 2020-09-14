@@ -1,21 +1,11 @@
 .user-data {
-  padding: 0;
-  margin: 0;
   display: flex;
   flex-wrap: wrap;
   border: none;
-  border-top: 2px solid $btn-basic-color;
-  margin-top: 12px;
   padding-bottom: 10px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 30px;
-    padding-right: 70px;
     padding-bottom: 46px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 70px;
   }
 }
 
@@ -23,10 +13,9 @@
   font-size: 24px;
   line-height: 26px;
   margin: 0;
-  padding: 0 15px 0 20px;
-  margin-top: -31px;
   margin-bottom: 31px;
-  padding-top: 14px;
+  margin-left: -20px;
+  padding: 14px 12px 0 20px;
   background: $color-main--lighten;
   color: $color-main--darkest;
 
@@ -34,8 +23,8 @@
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 77px;
-    margin-top: -26px;
     padding: 0 40px;
+    margin-left: 0;
 
     br {
       display: none;
@@ -43,16 +32,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -28px;
+    padding: 0 40px;
+    margin-left: -40px;
   }
 }
 
 .user-data__wrapper {
-  padding: 0 20px;
-
   @media (min-width: $tablet-width) {
-    padding: 0;
-    padding-left: 40px;
+    padding: 0 40px;
   }
 
   @media (min-width: $desktop-width) {
