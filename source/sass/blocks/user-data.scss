@@ -5,8 +5,18 @@
   flex-wrap: wrap;
   border: none;
   border-top: 2px solid $btn-basic-color;
-  margin-top: -15px;
+  margin-top: 12px;
   padding-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+    padding-right: 70px;
+    padding-bottom: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 70px;
+  }
 }
 
 .user-data__title {
@@ -14,9 +24,45 @@
   line-height: 26px;
   margin: 0;
   padding: 0 15px 0 20px;
+  margin-top: -31px;
   margin-bottom: 31px;
   padding-top: 14px;
+  background: $color-main--lighten;
   color: $color-main--darkest;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 77px;
+    margin-top: -26px;
+    padding: 0 40px;
+
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -28px;
+  }
+}
+
+.user-data__wrapper {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    width: 1220px;
+    margin: 0 auto;
+    padding: 0;
+  }
 }
 
 .user-data__label {
@@ -25,7 +71,25 @@
   display: flex;
   align-items: baseline;
   margin-bottom: 15px;
-  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+
+  &--email {
+    @media (min-width: $desktop-width) {
+      grid-column: 1;
+      padding-right: 25px;
+    }
+  }
+
+  &--tel {
+    @media (min-width: $desktop-width) {
+      padding-left: 25px;
+    }
+  }
 }
 
 .user-data__input {
@@ -40,5 +104,34 @@
     line-height: 18px;
     color: $color-main;
     text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
+  &--email {
+    background: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-size: 20px 14px;
+    background-position: right 14px center;
+
+    @media (min-width: $tablet-width) {
+      padding: 13px 21px;
+      margin-left: 21px;
+    }
+  }
+
+  &--tel {
+    background: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: right 14px center;
+
+    @media (min-width: $tablet-width) {
+      padding: 13px 19px;
+      margin-left: 16px;
+    }
   }
 }

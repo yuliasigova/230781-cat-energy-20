@@ -5,19 +5,53 @@
   border-top: 2px solid $btn-basic-color;
   color: $color-main--darkest;
   padding-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+    margin-bottom: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/-1;
+    padding: 0 70px;
+    margin-bottom: 40px;
+  }
 }
 
 .input-checkbox__title {
   font-size: 24px;
   line-height: 26px;
   padding: 0 20px;
+  margin-top: -17px;
   margin-bottom: 39px;
+  background: $color-main--lighten;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0 40px;
+    margin-bottom: 62px;
+    margin-top: -24px;
+  }
 }
 
 .input-checkbox__list {
   list-style: none;
   margin: 0;
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 17px;
+    column-gap: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 78px;
+  }
 }
 
 .input-checkbox__item {
@@ -25,18 +59,41 @@
   text-transform: uppercase;
   margin-bottom: 25px;
   padding-left: 44px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 59px;
+  }
 }
 
 .input-checkbox__label {
-  position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 26px;
-    height: 26px;
-    border: 1px solid #cdcdcd;
-    top: 0;
-    left: -44px;
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    top: -6px;
+    left: -58px;
   }
+}
+
+.input-checkbox__box {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  border: 1px solid $gray--darken;
+  left: 0;
+  top: -4px;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.input-checkbox__input:checked + .input-checkbox__box {
+  background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 21.1 15.5' style='fill: %2368b738;' xml:space='preserve'%3E%3Cpolygon class='st77' points='20.1,0 7.7,13.3 1,6.1 0,7.2 7.6,15.4 7.7,15.5 21,1.2 21.1,1.1 '/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 22px;
+  background-position: center;
 }

@@ -1,6 +1,4 @@
 .catalog {
-  outline: 5px solid khaki;
-  outline-offset: -5px;
   margin: 0 auto;
 }
 
@@ -9,32 +7,32 @@
   padding: 0;
   list-style: none;
   display: grid;
-  row-gap: 19px;
   margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 60px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 68px;
     margin-bottom: 67px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
     column-gap: 80px;
-    row-gap: 63px;
+    row-gap: 71px;
+    margin-bottom: 73px;
   }
 }
 
 .catalog__item {
   border-bottom: 1px solid $gray--light;
-  padding: 8px 0 11px;
   margin: 0 -20px;
 
   @media (min-width: $tablet-width) {
     min-width: 324px;
     border: none;
     margin: 0;
-    padding-top: 81px;
+    padding-top: 74px;
   }
 
   @media (min-width: $desktop-width) {

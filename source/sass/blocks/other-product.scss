@@ -1,11 +1,16 @@
 .other-product {
   display: block;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
+  }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr auto;
     column-gap: 79px;
-    margin-bottom: 48px;
+    margin-bottom: 20px;
   }
 }
 
@@ -16,11 +21,53 @@
   font-weight: 400;
   margin: 0;
   margin-bottom: 35px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 53px;
+    height: 2px;
+    background: $btn-basic-color;
+    top: 14px;
+    right: -20px;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 80px;
+    padding-left: 40px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 2px;
+      background: $btn-basic-color;
+      top: 22px;
+      left: -30px;
+    }
+
+    &::after {
+      width: 328px;
+      top: 22px;
+      right: -30px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+
+    &::before {
+      width: 70px;
+      left: -110px;
+    }
+
+    &::after {
+      width: 957px;
+      right: -433px;
+    }
   }
 }
 
@@ -30,6 +77,10 @@
   list-style: none;
   margin-bottom: 39px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 67px;
+  }
+
   @media (min-width: $desktop-width) {
     grid-column: 1;
   }
@@ -38,10 +89,10 @@
 .other-product__item {
   padding-top: 13px;
   padding-bottom: 18px;
-  border-bottom: 1px solid #cdcdcd;
+  border-bottom: 1px solid $gray--darken;
 
   &:first-child {
-    border-top: 1px solid #cdcdcd;
+    border-top: 1px solid $gray--darken;
   }
 
   @media (min-width: $tablet-width) {
@@ -49,8 +100,8 @@
     grid-template-columns: auto 1fr;
     padding-right: 38px;
     padding-left: 38px;
-    border-left: 1px solid #cdcdcd;
-    border-right: 1px solid #cdcdcd;
+    border-left: 1px solid $gray--darken;
+    border-right: 1px solid $gray--darken;
     padding-top: 26px;
     padding-bottom: 28px;
   }

@@ -8,13 +8,12 @@
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
-    padding: 62px 41px 51px;
+    padding: 62px 41px 58px;
   }
 
   @media (min-width: $desktop-width) {
     background-color: $color-main--lighten;
     width: 570px;
-    outline: 5px solid yellowgreen;
     position: absolute;
     z-index: 2;
     top: 95px;
@@ -27,9 +26,18 @@
   text-transform: uppercase;
   color: $color-main--darken;
   margin: 0;
+  display: flex;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
-    width: 171px;
+    font-size: 20px;
+    line-height: 21px;
+    padding-right: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 34px;
+    padding-right: 0;
   }
 }
 
@@ -40,6 +48,18 @@
   line-height: 20px;
 
   @media (min-width: $tablet-width) {
-    width: 159px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    padding-left: 40px;
+  }
+}
+
+.contacts__address span {
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-top: 20px;
   }
 }

@@ -1,6 +1,4 @@
 .example {
-  outline: 5px solid tomato;
-  outline-offset: -5px;
   background-color: $gray;
   padding-top: 27px;
 
@@ -10,11 +8,33 @@
   }
 
   @media (min-width: $desktop-width) {
+    background: linear-gradient(to bottom, transparent 180px, $gray--lighten 180px);
+  }
+}
+
+.example__wrapper {
+  display: block;
+
+  @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 74px;
-    max-width: 1220px;
-    margin: auto;
+    padding-bottom: 66px;
+  }
+}
+
+.example__info {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 250px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    width: 441px;
   }
 }
 
@@ -29,51 +49,37 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 63px;
+    margin-bottom: 64px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 137px;
+    margin-bottom: 140px;
   }
 }
 
-.example__info {
+.example__text {
   font-family: "Arial", sans-serif;
   margin: 0;
   margin-bottom: 25px;
+  padding-right: 14px;
 
   @media (min-width: $tablet-width) {
     br {
       display: none;
     }
     margin-bottom: 54px;
+    padding-right: 10px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 50px;
-  }
-}
-
-.example__wrapper {
-  display: block;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 250px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 0;
-    width: 436px;
+    margin-bottom: 60px;
   }
 }
 
 .example__table {
   margin: 0;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
   grid-column-gap: 31px;
   text-align: center;
 
@@ -110,10 +116,15 @@
     background-color: $color-main--lighten;
     font-size: 14px;
     line-height: 14px;
+    margin: -10px 12px 0;
 
     br {
       display: none;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $gray--lighten;
   }
 }
 
@@ -155,5 +166,6 @@
 
   @media (min-width: $desktop-width) {
     background: none;
+    margin: 0;
   }
 }

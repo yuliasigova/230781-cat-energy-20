@@ -10,7 +10,7 @@
   @media (min-width: $tablet-width) {
     width: 428px;
     height: 6px;
-    background: #dcdcdc;
+    background: $filter-color;
     position: relative;
   }
 }
@@ -29,17 +29,18 @@
     background: $color-main--lighten;
     border: 1px solid $gray--darken;
     border-radius: 50%;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
-    top: -15px;
+    box-shadow: 0 1px 3px $color-main--darkest-16;
+    top: -18px;
     left: 50%;
+    transform: translateX(-50%);
 
     &:focus,
     &:hover {
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19);
+      box-shadow: 0 2px 4px $color-main--darkest-19;
     }
 
     &:active {
-      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 3px 5px $color-main--darkest-20;
       border-color: $btn-basic-color;
     }
 

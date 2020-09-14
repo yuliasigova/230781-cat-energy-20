@@ -7,6 +7,10 @@
     padding-top: 46px;
     padding-bottom: 66px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 55px;
+  }
 }
 
 .form__title {
@@ -31,5 +35,9 @@
     font-size: 20px;
     line-height: 30px;
     padding: 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
