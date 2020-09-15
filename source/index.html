@@ -50,7 +50,8 @@
         <img src="img/logo-mobile.svg" width="191" height="38" alt="Лого сайта">
       </picture>
     </a>
-    <nav class="main-nav main-nav--opened">
+    <!--Для изменения внешнего вида кнопки используются классы main-nav--opened main-nav--closed-->
+    <nav class="main-nav main-nav--nojs">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
@@ -106,7 +107,8 @@
         <li class="ration__item">
           <article class="ration-card ration-card--gain">
             <h3 class="ration-card__title">Набор массы</h3>
-            <p class="ration-card__info ration-card__info--gain">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
+            <p class="ration-card__info ration-card__info--gain">Заработать авторитет среди дворовых котов и даже собак?
+              Серия Cat Energy Pro
               поможет вашему коту
               нарастить необходимые мышцы!</p>
             <a class="ration-card__link" href="#">Каталог Pro</a>
@@ -133,63 +135,63 @@
     </section>
     <section class="example">
       <div class="example__wrapper container">
-      <div class="example__info">
-        <h2 class="example__title">Живой пример</h2>
-        <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat <br>Energy
-          Slim.
-          Отличный результат без
-          изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-        <dl class="example__table">
-          <dt class="example__value">5 кг</dt>
-          <dd class="example__description">снижение<br> веса</dd>
-          <dt class="example__value">60 ДНЕЙ</dt>
-          <dd class="example__description">затрачено<br> времени</dd>
-        </dl>
-        <p class="example__price">Затраты на питание:<span>15 000 РУБ.</span></p>
-      </div>
-      <div class="example__slider slider">
-        <ul class="slider__list">
-          <li class="slider__item">
-            <picture>
-              <source type="image/webp" media="(min-width: 1340px)" srcset="img/before-desktop@1x.webp,
-              img/before-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp,
-              img/before-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/before-mobile@1x.webp,
-              img/before-mobile@2x.webp 2x">
-              <source media="(min-width: 1340px)" srcset="img/before-desktop@1x.png,
-              img/before-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png,
-              img/before-tablet@2x.png 2x">
-              <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="311" height="232"
-                alt="физическая форма кота до программы">
-            </picture>
-          </li>
-          <li class="slider__item slider__item--hidden">
-            <picture>
-              <source type="image/webp" media="(min-width: 1340px)" srcset="img/after-desktop@1x.webp,
-              img/after-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp,
-              img/after-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/after-mobile@1x.webp,
-              img/after-mobile@2x.webp 2x">
-              <source media="(min-width: 1340px)" srcset="img/after-desktop@1x.png,
-              img/after-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png,
-              img/after-tablet@2x.png 2x">
-              <img src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="311" height="232"
-                alt="физическая форма кота после программы">
-            </picture>
-          </li>
-        </ul>
-        <div class="slider__controls control">
-          <button class="control__button control__button--before" type="button">было</button>
-          <div class="control__range-filter range-filter">
-            <div class="range-filter__scale" tabindex="0"></div>
-          </div>
-          <button class="control__button control__button--after" type="button">стало</button>
+        <div class="example__info">
+          <h2 class="example__title">Живой пример</h2>
+          <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat <br>Energy
+            Slim.
+            Отличный результат без
+            изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+          <dl class="example__table">
+            <dt class="example__value">5 кг</dt>
+            <dd class="example__description">снижение<br> веса</dd>
+            <dt class="example__value">60 ДНЕЙ</dt>
+            <dd class="example__description">затрачено<br> времени</dd>
+          </dl>
+          <p class="example__price">Затраты на питание:<span>15 000 РУБ.</span></p>
         </div>
-      </div>
+        <div class="example__slider slider">
+          <ul class="slider__list">
+            <li class="slider__item">
+              <picture>
+                <source type="image/webp" media="(min-width: 1340px)" srcset="img/before-desktop@1x.webp,
+              img/before-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp,
+              img/before-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/before-mobile@1x.webp,
+              img/before-mobile@2x.webp 2x">
+                <source media="(min-width: 1340px)" srcset="img/before-desktop@1x.png,
+              img/before-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png,
+              img/before-tablet@2x.png 2x">
+                <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="311" height="232"
+                  alt="физическая форма кота до программы">
+              </picture>
+            </li>
+            <li class="slider__item slider__item--hidden">
+              <picture>
+                <source type="image/webp" media="(min-width: 1340px)" srcset="img/after-desktop@1x.webp,
+              img/after-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp,
+              img/after-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/after-mobile@1x.webp,
+              img/after-mobile@2x.webp 2x">
+                <source media="(min-width: 1340px)" srcset="img/after-desktop@1x.png,
+              img/after-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png,
+              img/after-tablet@2x.png 2x">
+                <img src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="311" height="232"
+                  alt="физическая форма кота после программы">
+              </picture>
+            </li>
+          </ul>
+          <div class="slider__controls control">
+            <button class="control__button control__button--before" type="button">было</button>
+            <div class="control__range-filter range-filter">
+              <div class="range-filter__scale" tabindex="0"></div>
+            </div>
+            <button class="control__button control__button--after" type="button">стало</button>
+          </div>
+        </div>
       </div>
     </section>
   </main>
@@ -209,20 +211,20 @@
         <iframe src="https://yandex.ru/map-widget/v1/-/CCQxmGTL-A" width="560" height="400" allowfullscreen
           title="Офис компании по адресу ул. Большая Конюшенная 19/8, г.Санкт-Петербург">
         </iframe>
-          <picture>
-            <source type="image/webp" media="(min-width: 1340px)" srcset="img/bg-map-desktop@1x.webp,
+        <picture>
+          <source type="image/webp" media="(min-width: 1340px)" srcset="img/bg-map-desktop@1x.webp,
               img/bg-map-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp,
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp,
               img/bg-map-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/bg-map-mobile@1x.webp,
+          <source type="image/webp" srcset="img/bg-map-mobile@1x.webp,
               img/bg-map-mobile@2x.webp 2x">
-            <source media="(min-width: 1340px)" srcset="img/bg-map-desktop@1x.png,
+          <source media="(min-width: 1340px)" srcset="img/bg-map-desktop@1x.png,
               img/bg-map-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png,
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png,
               img/bg-map-tablet@2x.png 2x">
-            <img src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" width="320" height="362"
-              alt="Офис компании по адресу ул. Большая Конюшенная 19/8, г.Санкт-Петербург">
-          </picture>
+          <img src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" width="320" height="362"
+            alt="Офис компании по адресу ул. Большая Конюшенная 19/8, г.Санкт-Петербург">
+        </picture>
       </div>
     </section>
     <section class="page-footer__nav footer-nav">
@@ -267,7 +269,6 @@
       </div>
     </section>
   </footer>
-  <script src="js/main-nav.js"></script>
 </body>
 
 </html>
