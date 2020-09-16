@@ -107,8 +107,8 @@
   border-color: $hover-color-30;
 }
 
-.input-checkbox__input:active ~ label,
-label:active {
-
+.input-checkbox__label:active,
+.input-checkbox__input:active {
+  border-color: $hover-color-30;
   color: $color-main--darkest-30;
 }
