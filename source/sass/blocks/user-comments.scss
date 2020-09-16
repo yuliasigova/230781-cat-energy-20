@@ -72,3 +72,11 @@
     }
   }
 }
+
+.user-comments__textarea:hover {
+  border-color: $gray--darken;
+}
+
+.user-comments__textarea:active {
+  border-color: $color-main;
+}

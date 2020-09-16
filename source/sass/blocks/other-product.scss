@@ -1,4 +1,24 @@
 .other-product {
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: $btn-basic-color;
+    top: 16px;
+    left: 0;
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      top: 20px;
+    }
+  }
+}
+
+.other-product__container {
   display: block;
   margin-bottom: 35px;
 
@@ -21,53 +41,23 @@
   font-weight: 400;
   margin: 0;
   margin-bottom: 35px;
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 53px;
-    height: 2px;
-    background: $btn-basic-color;
-    top: 14px;
-    right: -20px;
-  }
+  margin-left: -20px;
+  padding-left: 20px;
+  width: 270px;
+  background: $color-main--lighten;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 80px;
-    padding-left: 40px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      width: 30px;
-      height: 2px;
-      background: $btn-basic-color;
-      top: 22px;
-      left: -30px;
-    }
-
-    &::after {
-      width: 328px;
-      top: 22px;
-      right: -30px;
-    }
+    margin-left: 0;
+    padding-left: 38px;
+    width: 410px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
-
-    &::before {
-      width: 70px;
-      left: -110px;
-    }
-
-    &::after {
-      width: 957px;
-      right: -433px;
-    }
+    margin-left: -40px;
+    padding-left: 40px;
   }
 }
 

@@ -7,3 +7,13 @@
     padding-top: 10px;
   }
 }
+
+.logo__link {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}

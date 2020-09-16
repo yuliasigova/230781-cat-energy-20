@@ -152,7 +152,13 @@
   &--gray {
     padding: 10px 79px;
     color: $color-main;
-    background-color: $gray--lighten;
+    background: $gray--lighten;
+
+    &:hover,
+    &:focus {
+      color: $color-main;
+      background: $gray--light;
+    }
 
     @media (min-width: $desktop-width) {
       padding: 10px 39px;

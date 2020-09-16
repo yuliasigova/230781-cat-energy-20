@@ -67,3 +67,15 @@
     }
   }
 }
+
+.input-text__input:hover {
+  border-color: $gray--darken;
+}
+
+.input-text__input:focus {
+  border-color: $color-main;
+}
+
+.input-text__input:focus:invalid {
+  border-color: $error-color;
+}

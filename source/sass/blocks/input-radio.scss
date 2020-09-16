@@ -87,3 +87,11 @@
     top: 8px;
   }
 }
+
+.input-radio__input:hover + .input-radio__label::before {
+  border-color: $hover-color;
+}
+
+.input-radio__input:active + .input-radio__label {
+  opacity: 0.3;
+}
