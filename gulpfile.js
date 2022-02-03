@@ -13,7 +13,7 @@ const del = require("del");
 // Styles
 
 const styles = () => {
-  return gulp.src("source/sass/style.scss")
+  return gulp.src("docs/sass/style.scss")
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
@@ -33,21 +33,21 @@ exports.styles = styles;
 // HTML
 
 const html = () => {
-  return gulp.src("source/*.html")
+  return gulp.src("docs/*.html")
     .pipe(gulp.dest("./build"))
     .pipe(sync.stream());
 }
 exports.html = html;
 
 const webp =() => {
-  return gulp.src("source/img/*.webp")
+  return gulp.src("docs/img/*.webp")
   .pipe(gulp.dest("./build/img"))
 }
 exports.webp = webp;
 
 //Imagemin
 const images = () => {
-  return gulp.src("source/img/**/*.{jpg,png,svg}")
+  return gulp.src("docs/img/**/*.{jpg,png,svg}")
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.mozjpeg({progressive: true}),
@@ -60,10 +60,10 @@ exports.images = images;
 // Copy
 const copy = () => {
   return gulp.src([
-    "source/fonts/**/*.{woff,woff2}",
-    "source/js/**",
+    "docs/fonts/**/*.{woff,woff2}",
+    "docs/js/**",
   ], {
-    base: 'source'
+    base: 'docs'
   })
     .pipe(gulp.dest("build"));
 };
@@ -95,8 +95,8 @@ exports.server = server;
 // Watcher
 
 const watcher = () => {
-  gulp.watch('source/sass/**/*.scss', gulp.series(styles));
-  gulp.watch('source/*.html', gulp.series(html));
+  gulp.watch('docs/sass/**/*.scss', gulp.series(styles));
+  gulp.watch('docs/*.html', gulp.series(html));
 }
 
 // Build
