@@ -12,8 +12,9 @@
     "gulp-plumber": "1.2.1",
     "gulp-postcss": "8.0.0",
     "gulp-rename": "^2.0.0",
-    "gulp-sass": "4.1.0",
+    "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "2.6.5",
+    "sass": "^1.49.7",
     "stylelint": "13.6.1",
     "stylelint-config-htmlacademy": "0.1.4"
   },
@@ -38,7 +39,7 @@
     "source/sass/**/*.scss"
   ],
   "engines": {
-    "node": "12.18.2"
+    "node": "16.13.0"
   },
   "dependencies": {
     "del": "^5.1.0"
